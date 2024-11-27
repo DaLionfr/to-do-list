@@ -1,0 +1,174 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Ensures no overflow issues */
+    z-index: -1; /* Places the background container behind all other content */
+  }
+
+  .background-container::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vh; /* Adjust this to ensure the background covers the area */
+    height: 100vw; /* Adjust this to ensure the background covers the area */
+    background-image: url('file:///home/me/Downloads/gardeningBackgroundPicture.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire pseudo-element */
+    background-position: center; /* Centers the background image */
+    transform: translate(-50%, -50%) rotate(90deg); /* Rotates the background image */
+  }
+
+  .content {
+    position: relative;
+    z-index: 1; /* Ensures the content is above the background container */
+    padding: 20px; /* Adjust as needed */
+  }
+  
+
+  h1 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 0.5px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+  
+  #quote {
+    font-style: italic;
+    
+  }
+
+  #author {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif 
+  }
+
+  #quote-box {
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+  
+  h1, h2, p {
+    text-align: center;
+  }
+  
+  .menu {
+    width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+  }
+
+  .icon-container {
+    text-align: center;
+    color: rgb(1, 61, 1)
+  }
+  
+  li {
+    list-style-type: none;
+    text-align: left; 
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+
+  hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+  }
+  
+  .bottom-line {
+    margin-top: 25px;
+  }
+  
+  h1, h2 {
+    font-family: Impact, serif;
+    color: rgb(1, 61, 1);
+  }
+  
+  .item li {
+    display: inline-block
+  }
+
+  button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px 0 0 10px;
+  }
+  button:hover {
+    background-color: darkred;
+  }
+
+  .item p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  
+  .flavor, .dessert {
+    text-align: left;
+    width: 75%;
+  }
+  
+  .price {
+    text-align: right;
+    width: 24%;
+  }
+  
+  /* FOOTER */
+  
+  footer {
+    font-size: 14px;
+  }
+  
+  .address {
+    margin-bottom: 5px;
+  }
+  
+  a {
+    color: black;
+  }
+  
+  a:visited {
+    color: black;
+  }
+  
+  a:hover {
+    color: brown;
+  }
+  
+  a:active {
+    color: brown;
+  }
+  
